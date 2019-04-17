@@ -22,6 +22,7 @@ switch (new Date().getDay()){
         day = "Saturday";
         break;
 }
+document.getElementById("theDay").innerHTML = "(" + day +")"
 document.getElementById("week").innerHTML= day + " Class Rutine is";
 
 if(day == "Sunday"){
@@ -29,6 +30,9 @@ if(day == "Sunday"){
     document.getElementById("preTwo").innerHTML = "Data Communication";
     document.getElementById("preThree").innerHTML = "Object Oriented Programming";
     document.getElementById("preFour").innerHTML = "Business & Organization";
+    document.getElementById("classOneTime").innerHTML = "11:25 am > 12:45 pm";
+    document.getElementById("classTwoTime").innerHTML = "12:45 pm > 10:25 pm";
+    document.getElementById("classThreeTime").innerHTML = "01:25 pm > 02:05 pm";
 }else{
     if(day == "Monday"){
         document.getElementById("preOne").innerHTML = "Principal Of Digital Electornics";
@@ -47,6 +51,7 @@ if(day == "Sunday"){
                 document.getElementById("preThree").innerHTML = "Computer Periferrerls";
                 document.getElementById("classOneTime").innerHTML = "11:25 am > 12:00 pm";
                 document.getElementById("classTwoTime").innerHTML = "12:00 pm > 12:40 pm";
+                document.getElementById("classThreeTime").innerHTML = "12:40 pm > 01:20 pm";
             }else{
                 if(day == "Thursday"){
                     document.getElementById("preOne").innerHTML = "Data Communication";
