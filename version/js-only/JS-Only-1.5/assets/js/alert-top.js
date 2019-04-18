@@ -1,4 +1,4 @@
-var calssNowHour;
+/*var calssNowHour;
 calssNowHour = new Date().getHours();
 
 var classNowMin;
@@ -29,10 +29,20 @@ switch (new Date().getDay()){
     break;
 }
 var classNow = calssNowHour + "h" + classNowMin +"m"+ classDay;
-if("20h50m3w" == classNow){
-    document.getElementById("classNow").innerText = "Ore bap clss suru";
+if("11h25m1w" == classNow){
+    document.getElementById("classNow").innerHTML = "Web Development (<i>time left 49 min</i>)";
 }else{
-    if("20h51m3w" == classNow){
-        document.getElementById("classNow").innerHTML ="bafo class cole";
+    if("11h26m1w" == classNow){
+        document.getElementById("classNow").innerHTML = "Web Development <i>time left 48 min</i>";
+    }else{
+        if("11h27m1w" == classNow){
+            document.getElementById("classNow").innerHTML = "Web Development <i>time left 47 min</i>";
+        }else{
+            if("11h28m1w"){
+                document.getElementById("classNow").innerHTML = "Web Development (<i>time left 47 min</i>)";
+            }else{
+                document.getElementById("classNow").innerHTML = "Waiting..."
+            }
+        }
     }
-}
+}*/

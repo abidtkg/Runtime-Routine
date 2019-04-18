@@ -75,6 +75,11 @@ if(day == "Sunday"){
                         document.getElementById("preThree").innerHTML = "Holiday";
                         document.getElementById("preFour").innerHTML = "Holiday";
                         document.getElementById("forthsub").innerHTML = "4";
+                        document.getElementById("classOneTime").innerHTML = "Friday";
+                        document.getElementById("classTwoTime").innerHTML = "Friday";
+                        document.getElementById("classThreeTime").innerHTML = "Friday";
+                        document.getElementById("classFourTime").innerHTML = "Friday";
+
                     }else{
                         if(day == "Saturday"){
                             document.getElementById("preOne").innerHTML = "Principal Of Digital Electornics";

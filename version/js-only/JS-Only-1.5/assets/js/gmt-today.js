@@ -1,3 +1,22 @@
+function time(){
+    var pageHour = new Date().getHours();
+    var pageMin = new Date().getMinutes();
+    var pageSec = new Date().getSeconds();
+
+    document.getElementById("pageHour").innerHTML = pageHour;
+    document.getElementById("pageMin").innerHTML = pageMin;
+    document.getElementById("pageSec").innerHTML = pageSec;
+
+    if(pageHour > 11){
+        document.getElementById("amPm").innerHTML = "pm";
+    }else{
+        document.getElementById("amPm").innerHTML = "am";
+    }
+
+    setTimeout(time, 1000);
+}
+time();
+
 var pageDate;
 pageDate =  new Date().getDate();
 document.getElementById("pageDate").innerHTML = pageDate;
@@ -65,5 +84,3 @@ if(pageMonth == 1){
 var pageYear;
 pageYear = new Date().getFullYear();
 document.getElementById("pageYear").innerHTML = pageYear;
-
-
