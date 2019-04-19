@@ -86,6 +86,11 @@ if(day == "Sunday"){
                             document.getElementById("preTwo").innerHTML = "Object Oriented Programming";
                             document.getElementById("preThree").innerHTML = "Data Structure	& Algorithms";
                             document.getElementById("preFour").innerHTML = "Computer Periferrerls";
+                            document.getElementById("classOneTime").innerHTML = "11:25 am > 12:05 pm";
+                            document.getElementById("classTwoTime").innerHTML = "12:05 pm > 01:25 pm";
+                            document.getElementById("classThreeTime").innerHTML = "01:25 pm > 02:05 pm";
+                            document.getElementById("classFourTime").innerHTML = "02:05 pm > 02:45 pm";
+                            document.getElementById("forthsub").innerHTML = "4";
                         }else{
                             document.getElementById("week").innerHTML = "There is some error";
                         }
