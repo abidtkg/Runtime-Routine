@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>JS-Only-1.5.0</title>
+    <!--BOOTSTRAP LOCAL CSS-->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    
     <!--BOOTSTRAP CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -10,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
-    <div class="container">
+    <div>
 
       <div class="alert alert-warning alert-dismissible fade show col-sm-12" role="alert">
           Now Class is: <b id="classNow">Time Notification (earlier version)</b>
@@ -21,10 +24,10 @@
         
         <div class="alert alert-success text-center" role="alert">
             Today <b id="pageDate">11</b> <b id="pageMonth">Month</b> <b id="pageYear">Year</b> <i id="theDay"></i> <b id="pageHour"></b>:<b id="pageMin"></b>:<b id="pageSec"></b> <i id="amPm"></i>
-          </div>
+        </div>
 
-          <div class="container">
-            <div class="col-sm-12">
+         <!--  <div class="container"> -->
+            <div class="col-sm-12 col-md-12 col-lg-12 col-12" >
 
             
 
@@ -84,9 +87,41 @@
                 </h2>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                    Will relese upcoming version <i>1.7.0</i>
-                </div>
+                
+                   <!--<div class="card-body">-->
+                    <table class="table table-dark">
+                      <thead>
+                        <tr>
+                          <th colspan="3" scope="col">
+                            <h2 id="upweek"></h2> 
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td id="uppreOne"></td>
+                          <td id="upclassOneTime"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td id="uppreTwo"></td>
+                          <td id="upclassTwoTime"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td id="uppreThree"></td>
+                          <td id="upclassThreeTime"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" id="upforthsub"></th>
+                          <td id="uppreFour"></td>
+                          <td id="upclassFourTime"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+              <!--</div>-->            
+                
               </div>
             </div>
             <div class="card">
@@ -105,12 +140,17 @@
             </div>
           </div>
         </div>
-        </div>
+        <!-- </div>  -->
+    </div>
           <!--CUSTOM JAVASCRIPT CODES LINK-->
           <script src="assets/js/main-script.js"></script>
           <script src="assets/js/gmt-today.js"></script>
-          <script src="xx.assets/js/alert-top.js"></script>
-          <script src="xx.assets/js/alert-variables.js"></script>
+          <script src="assets/js/rutine-data.js"></script>
+
+          <!--BOOTSTRAP JAVASCRIPT LOCAL -->
+          <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+          <script src="assets/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+          <script src="assets/bootstrap/js/popper.min.js"></script>
 
           <!--BOOTSTRAP JAVASCRIPT CDN-->
           <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
