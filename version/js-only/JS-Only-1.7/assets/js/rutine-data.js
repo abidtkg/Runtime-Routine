@@ -35,7 +35,7 @@ switch (new Date().getDay()){
 
 //Day function
 
-if(day == "Sunday Class Routine is"){
+if(day == "Sunday"){
     document.getElementById("upweek").innerHTML= "Monday Class Routine is";
 }else{
     if(day == "Monday"){
