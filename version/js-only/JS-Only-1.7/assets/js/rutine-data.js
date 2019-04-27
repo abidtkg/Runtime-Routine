@@ -57,7 +57,6 @@ if(day == "Sunday"){
                             document.getElementById("upweek").innerText = "Sunday Class Routine is";
                             }else{
                                 document.getElementById("upweek").innerText = "There is some error";
-                            }
                         }
                     }
                 }
@@ -65,6 +64,7 @@ if(day == "Sunday"){
         }
     }
 }
+
 
 
 if(day == "Sunday"){
