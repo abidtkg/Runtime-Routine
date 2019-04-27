@@ -53,6 +53,10 @@ if(day == "Sunday"){
                     if(day == "Friday"){
                         document.getElementById("upweek").innerHTML = "Saturday Class Routine is";
                     }else{
+                        if(day == "Saturday"){
+                            document.getElementById("upweek").innerText = "Sunday Class Routine is"
+                        }
+                    }
                         document.getElementById("upweek").innerHTML = "There is some error!";
                     }
                 }
