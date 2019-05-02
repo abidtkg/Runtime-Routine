@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS-Only-1.5.0</title>
+    <!--BOOTSTRAP LOCAL CSS-->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    
+    <!--BOOTSTRAP CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--CUSTOM CSS COODE LINK-->
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <div>
+
+      <div class="alert alert-warning alert-dismissible fade show col-sm-12" role="alert">
+          Now Class is: <b id="top-ale">Time Notification (earlier version)</b>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="alert alert-success text-center" role="alert">
+            Today <b id="pageDate">11</b> <b id="pageMonth">Month</b> <b id="pageYear">Year</b> <i id="theDay"></i> <b id="pageHour"></b>:<b id="pageMin"></b>:<b id="pageSec"></b> <x id="amPm"></x>
+        </div>
+
+         <!--  <div class="container"> -->
+            <div class="col-sm-12 col-md-12 col-lg-12 col-12" >
+
+            
+
+        <div class="accordion static" id="accordionExample">
+            <div class="card">
+              
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Today's Rotine
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <!--<div class="card-body">-->
+                    <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th colspan="3" scope="col">
+                              <h2 id="week"></h2>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td id="preOne"></td>
+                            <td id="classOneTime"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td id="preTwo"></td>
+                            <td id="classTwoTime"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td id="preThree"></td>
+                            <td id="classThreeTime"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="forthsub"></th>
+                            <td id="preFour"></td>
+                            <td id="classFourTime"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                <!--</div>-->
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Upcoming Day
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                
+                   <!--<div class="card-body">-->
+                    <table class="table table-dark">
+                      <thead>
+                        <tr>
+                          <th colspan="3" scope="col">
+                            <h2 id="upweek"></h2> 
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td id="uppreOne"></td>
+                          <td id="upclassOneTime"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td id="uppreTwo"></td>
+                          <td id="upclassTwoTime"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td id="uppreThree"></td>
+                          <td id="upclassThreeTime"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" id="upforthsub"></th>
+                          <td id="uppreFour"></td>
+                          <td id="upclassFourTime"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+              <!--</div>-->            
+                
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Porevious Day
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    Will relese upcoming version <i>2.0.0</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div>  -->
+    </div>
+          <!--CUSTOM JAVASCRIPT CODES LINK-->
+          <script src="assets/js/main-script.js"></script>
+          <script src="assets/js/gmt-today.js"></script>
+          <script src="assets/js/rutine-data.js"></script>
+          <script src="assets/js/top-alert.js"></script>
+
+          <!--BOOTSTRAP JAVASCRIPT LOCAL -->
+          <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+          <script src="assets/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+          <script src="assets/bootstrap/js/popper.min.js"></script>
+
+          <!--BOOTSTRAP JAVASCRIPT CDN-->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

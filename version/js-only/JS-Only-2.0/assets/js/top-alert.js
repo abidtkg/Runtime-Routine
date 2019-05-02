@@ -1,3 +1,13 @@
+var pageHour = new Date().getHours();
+var pageMin = new Date().getMinutes();
+
+//change min to decimal
+decPageMin = pageMin/100;
+
+//time in dec
+timeIn = pageHour + decPageMin;
+
+//counting the day
 var day;
 switch (new Date().getDay()){
     case 0:
@@ -22,8 +32,52 @@ switch (new Date().getDay()){
         day = "Saturday";
         break;
 }
-document.getElementById("theDay").innerHTML = "(" + day +")"
-document.getElementById("week").innerHTML= day + " Class Rutine is";
+
+/*main rutine function start
+if(day == "Sunday"){
+    if(timeIn < 11.25){
+        document.getElementById("top-ale").innerText = "No Class Ongoing";
+    }else{
+        if(timeIn < 12.45){
+            document.getElementById("top-ale").innerText = "Web Development";
+        }else{
+            if(timeIn < 13.25){
+                document.getElementById("top-ale").innerText = "Data Communication";
+            }else{
+                if(timeIn < 14.05){
+                    document.getElementById("top-ale").innerText = "Object Oriented Programming";
+                }
+            }
+        }
+    }
+}else{
+    if(day == "Monday"){
+        if(timeIn < 11.25){
+            document.getElementById("top-ale").innerText = "No Class Ongoing";
+    }else{
+        if(timeIn < 12.05){
+            document.getElementById("top-ale").innerText = "Principal Of Digital Electornics";
+        }else{
+            if(timeIn < 13.25){
+                document.getElementById("top-ale").innerText = "Computer Periferrls";
+            }else{
+                if(timeIn < 14.05){
+                    document.getElementById("top-ale").innerText = "Business & Organization";
+                }else{
+                    if(timeIn < 14.45){
+                        document.getElementById("top-ale").innerText = "Data Stucture & Algorithms";
+                        }
+                    }
+                }
+            }   
+        }
+    }else{
+        if(day == "Tuesday"){
+
+        }
+    }
+}
+*/
 
 if(day == "Sunday"){
     document.getElementById("preOne").innerHTML = "Web Development";
@@ -70,16 +124,9 @@ if(day == "Sunday"){
                     document.getElementById("classThreeTime").innerHTML = "01:25 pm > 02:45 pm";
                 }else{
                     if(day == "Friday"){
-                        document.getElementById("preOne").innerHTML = "Holiday";
-                        document.getElementById("preTwo").innerHTML = "Holiday";
-                        document.getElementById("preThree").innerHTML = "Holiday";
-                        document.getElementById("preFour").innerHTML = "Holiday";
-                        document.getElementById("forthsub").innerHTML = "4";
-                        document.getElementById("classOneTime").innerHTML = "Friday";
-                        document.getElementById("classTwoTime").innerHTML = "Friday";
-                        document.getElementById("classThreeTime").innerHTML = "Friday";
-                        document.getElementById("classFourTime").innerHTML = "Friday";
-
+                        if(timeIn < 23.59){
+                            document.getElementById("top-ale").innerHTML = "Holiday";
+                        }
                     }else{
                         if(day == "Saturday"){
                             document.getElementById("preOne").innerHTML = "Principal Of Digital Electornics";
@@ -100,3 +147,5 @@ if(day == "Sunday"){
         }
     }
 }
+
+document.write(timeIn);

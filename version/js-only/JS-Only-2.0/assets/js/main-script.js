@@ -1,3 +1,14 @@
+//Routine subjects data variable decleation
+var subPerif = "Computer Periferrls";
+var subWebDev = "Web Development";
+var subDigiElec = "Principal Of Digital Electornics";
+var subBiznes = "Business & Organization";
+var subDatCom = "Data Communication";
+var subOop = "Object Oriented Programming";
+var subDnA = "Data Stucture & Algorithms";
+
+
+
 var day;
 switch (new Date().getDay()){
     case 0:
@@ -26,45 +37,45 @@ document.getElementById("theDay").innerHTML = "(" + day +")"
 document.getElementById("week").innerHTML= day + " Class Rutine is";
 
 if(day == "Sunday"){
-    document.getElementById("preOne").innerHTML = "Web Development";
-    document.getElementById("preTwo").innerHTML = "Data Communication";
-    document.getElementById("preThree").innerHTML = "Object Oriented Programming";
-    document.getElementById("preFour").innerHTML = "Business & Organization";
+    document.getElementById("preOne").innerHTML = subWebDev;
+    document.getElementById("preTwo").innerHTML = subDatCom;
+    document.getElementById("preThree").innerHTML = subOop;
+    document.getElementById("preFour").innerHTML = subBiznes;
     document.getElementById("classOneTime").innerHTML = "11:25 am > 12:45 pm";
-    document.getElementById("classTwoTime").innerHTML = "12:45 pm > 1:25 pm";
+    document.getElementById("classTwoTime").innerHTML = "12:45 pm > 10:25 pm";
     document.getElementById("classThreeTime").innerHTML = "01:25 pm > 02:05 pm";
     document.getElementById("forthsub").innerHTML = "4";
 }else{
     if(day == "Monday"){
-        document.getElementById("preOne").innerHTML = "Principal Of Digital Electornics";
-        document.getElementById("preTwo").innerHTML = "Computer Periferrls";
-        document.getElementById("preThree").innerHTML = "Business & Organization";
-        document.getElementById("preFour").innerHTML = "Data Stucture & Algorithms";
+        document.getElementById("preOne").innerHTML = subDigiElec;
+        document.getElementById("preTwo").innerHTML = subPerif;
+        document.getElementById("preThree").innerHTML = subBiznes;
+        document.getElementById("preFour").innerHTML = subDnA;
         document.getElementById("classOneTime").innerHTML = "11:25 am > 12:05 pm";
         document.getElementById("classTwoTime").innerHTML = "12:05 pm > 01:25 pm";
         document.getElementById("classThreeTime").innerHTML = "01:25 pm > 02:05 pm";
         document.getElementById("classFourTime").innerHTML = "02:05 pm > 02:45 pm";
     }else{
         if(day == "Tuesday"){
-            document.getElementById("preOne").innerHTML = "Data Communication";
-            document.getElementById("preTwo").innerHTML = "Object Oriented Programming";
-            document.getElementById("preThree").innerHTML = "Principal Of Digital Electornics";
+            document.getElementById("preOne").innerHTML = subDatCom;
+            document.getElementById("preTwo").innerHTML = subOop;
+            document.getElementById("preThree").innerHTML = subDigiElec;
             document.getElementById("classOneTime").innerHTML = "11:25 am > 12:45 pm";
             document.getElementById("classTwoTime").innerHTML = "12:45 pm > 01:25 pm";
             document.getElementById("classThreeTime").innerHTML = "01:25 pm > 02:45 pm";
         }else{
             if(day == "Wednesday"){
-                document.getElementById("preOne").innerHTML = "Web Development";
-                document.getElementById("preTwo").innerHTML = "Data Communication";
-                document.getElementById("preThree").innerHTML = "Computer Periferrerls";
+                document.getElementById("preOne").innerHTML = subWebDev;
+                document.getElementById("preTwo").innerHTML = subDatCom;
+                document.getElementById("preThree").innerHTML = subPerif;
                 document.getElementById("classOneTime").innerHTML = "11:25 am > 12:00 pm";
                 document.getElementById("classTwoTime").innerHTML = "12:00 pm > 12:40 pm";
                 document.getElementById("classThreeTime").innerHTML = "12:40 pm > 01:20 pm";
             }else{
                 if(day == "Thursday"){
-                    document.getElementById("preOne").innerHTML = "Data Communication";
-                    document.getElementById("preTwo").innerHTML = "Principal Of Digital Electornics";
-                    document.getElementById("preThree").innerHTML = "Data Communication";
+                    document.getElementById("preOne").innerHTML = subDatCom;
+                    document.getElementById("preTwo").innerHTML = subDigiElec;
+                    document.getElementById("preThree").innerHTML = subDatCom;
                     document.getElementById("classOneTime").innerHTML = "11:25 am > 12:45 pm";
                     document.getElementById("classTwoTime").innerHTML = "12:45 pm > 01:25 pm";
                     document.getElementById("classThreeTime").innerHTML = "01:25 pm > 02:45 pm";
@@ -82,10 +93,10 @@ if(day == "Sunday"){
 
                     }else{
                         if(day == "Saturday"){
-                            document.getElementById("preOne").innerHTML = "Principal Of Digital Electornics";
-                            document.getElementById("preTwo").innerHTML = "Object Oriented Programming";
-                            document.getElementById("preThree").innerHTML = "Data Structure	& Algorithms";
-                            document.getElementById("preFour").innerHTML = "Computer Periferrerls";
+                            document.getElementById("preOne").innerHTML = subDigiElec;
+                            document.getElementById("preTwo").innerHTML = subOop;
+                            document.getElementById("preThree").innerHTML = subDnA;
+                            document.getElementById("preFour").innerHTML = subPerif;
                             document.getElementById("classOneTime").innerHTML = "11:25 am > 12:05 pm";
                             document.getElementById("classTwoTime").innerHTML = "12:05 pm > 01:25 pm";
                             document.getElementById("classThreeTime").innerHTML = "01:25 pm > 02:05 pm";
